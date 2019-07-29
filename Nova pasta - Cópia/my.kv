@@ -1,0 +1,55 @@
+<MyGrid>
+
+	origem: origem
+	destino: destino
+	tempo: tempo
+	plano: plano
+	com: com_
+	sem: sem_
+
+
+    GridLayout:
+    	cols:1
+    	size: root.width , root.height
+
+    	GridLayout:
+    		cols:8
+    		Label:
+        		text: "origem: "
+
+        	TextInput:
+        		multiline: False
+        		id :origem
+
+        	Label:
+        		text: "destino"
+
+        	TextInput:
+        		multiline: False
+        		id: destino
+
+        	Label:
+        		text: "tempo"
+
+        	TextInput:
+        		multiline: False
+        		id: tempo
+
+        	Label:
+        		text: "plano"
+
+        	TextInput:
+        		multiline: False
+        		id: plano
+
+    	Button:
+    		text: "calcular"
+    		on_press: root.btn()
+
+    	Label:
+    		text: "com fale mais:"
+    		id: com_
+
+    	Label:
+    		text:"sem fale mais:"
+    		id: sem_
